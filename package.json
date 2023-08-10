@@ -2,12 +2,14 @@
   "name": "calculator_app",
   "version": "1.0.0",
   "description": "This repository is devoted to setting up and exploring testing frameworks for a basic calculator app in JavaScript.",
-  "main": ".src/calculator.js",
+  "main": "src/calculator.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "cucumber-js"
+    "cucumber-test": "cucumber-js",
+    "mocha-test": "mocha test",
+    "jest-test": "jest test"
   },
   "keywords": [],
   "author": "",
