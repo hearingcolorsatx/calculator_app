@@ -37,7 +37,17 @@ npm install chai --save-dev
 ```
 
 <!-- Run the cucumber tests execute the following: -->
-`npm test`
+`npx cucumber-js`
+or
+`npm run cucumber-test`
+
+<!-- Run the mocha tests execute the following: -->
+`npx mocha ./test/mocha`
+or
+`npm run mocha-test ./test/mocha`
 
 <!-- Run the jest tests execute the following: -->
 `npx jest calculator.test.js`
+or
+`npm run jest`
+<!-- Note: Running the jest tests will also execute the mocha tests -->
