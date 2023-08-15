@@ -15,28 +15,28 @@ Given('I have entered {int} into the calculator', function (number) {
 When('I press add', function () {
   const a = enteredNumbers[0];
   const b = enteredNumbers[1];
-  console.log(a, "+", b)
+  // console.log(a, "+", b) // prints to numbers being added.
   calculator.add(a, b);
 });
 
 When('I press subtract', function () {
   const a = enteredNumbers[2];
   const b = enteredNumbers[3];
-  console.log(a, "-", b)
+  // console.log(a, "-", b) // prints to numbers being subtracted.
   calculator.subtract(a, b);
 });
 
 When('I press multiply', function () {
   const a = enteredNumbers[4];
   const b = enteredNumbers[5];
-  console.log(a, "x", b)
+  // console.log(a, "x", b) // prints to numbers being multiplied.
   calculator.multiply(a, b);
 });
 
 When('I press divide', function () {
   const a = enteredNumbers[6];
   const b = enteredNumbers[7];
-  console.log(a, "/", b)
+  // console.log(a, "/", b) // prints to numbers being divided.
   calculator.divide(a, b);
 });
 
