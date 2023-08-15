@@ -230,8 +230,8 @@ The Mocha tests in this project can be found in the `test/mocha` folder within `
 Now that we have a basic undestanding of how Mocha and Jest are structured and operate, to run the tests, simply execute the following commands:
 
 ```
-npm run mocha-test test/mocha`
-npm run jest-test`
+npm run mocha-test test/mocha
+npm run jest-test
 ```
 
 #### Notes
@@ -293,9 +293,29 @@ And that is how this basic API is setup! To start the server, simply execute the
 
 Now that the basic API is up and running locally. You can access it by making GET requests to the following URLs:
 
+```
 http://localhost:3000/add?a=5&b=3
 http://localhost:3000/subtract?a=5&b=3
 http://localhost:3000/multiply?a=5&b=3
 http://localhost:3000/divide?a=81&b=9
+```
 
-From Visual Studio Code, you should be able to hold `Ctrl` and click any of the above links to open it in a browser, or you can simply copy and paste the addresses above into a browser window, and it will show the result given the intergers provided.
+From Visual Studio Code, you should be able to hold `Ctrl` and click any of the above links to open it in a browser, or you can simply copy and paste the addresses above into a browser window one at a time, and it will show the result given the intergers provided.
+
+## TLDR
+
+Don't care about how any of this works and just want to run the tests and/or API? Here are the commands you need to execute in order:
+
+```
+git clone git@github.com:hearingcolorsatx/calculator_app.git
+cd calculator_app
+npm install
+npm run cucumber-test
+npm run mocha-test test/mocha
+npm run jest-test
+npm start
+```
+
+Those are all the commands you'd need to run to quickly clone the app, install the required dependencies, run the tests, and start the API.
+
+However, if you're new to the field/industry, it is recommended that you read the explanations above to improve your own understanding if you intend on making testing/development a career path unless, of course, you already know this stuff!
