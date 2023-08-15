@@ -89,11 +89,11 @@ Need to setup node and npm for development in Windows? Work through the followin
 
 3. At this point, if Chocolatey is already installed, skip to step 4. If it is not installed, executing the following to install it:
 
-`Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
+  `Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
 
 4. Install `Node.js` and `npm`:
 
-   ```
+  ```
   choco install -y --force nodejs-lts 
   npm i -g npm
   ```
